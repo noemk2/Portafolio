@@ -18,17 +18,74 @@ body{
     font-family: 'Lalezar', cursive;
     margin: 0;
 }
+
+.contac{
+    display: flex;
+}
+table{
+    width: 100%;
+}
+th{
+    background: #273b47;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+}
+td{
+    padding: 20px;
+}
+table, td, th{
+    border: 1px solid #273b47;
+    border-collapse: collapse;
+}
+input, textarea{
+    outline: 0;
+}
+input:focus, textarea:focus {
+  background: lightgray;
+}
+.contenedor{
+     width: 800px;
+    margin: auto;
+    position: relative;
+/*
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 500px;
+*/
+}
+.header{
+/*
+        width: 800px;
+    margin: auto;
+*/
+    position: relative;
+}
+
+.background{
+    background-image: url("../images/background.png");
+    background-size: cover;
+}
 .button{
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
     background: #fd324e;
     color: white;
-    padding: 7px;
+    padding: 7px 12px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    background: linear-gradient(to left, #fe344e, #ff7250);
 }
 .titulo{
 font-family: 'Lily Script One', cursive;
     font-size: 70px; 
-    margin-bottom: 0px;
+    margin-bottom: 0;
+}
+.titulo span{
+    text-decoration: underline;
 }
 .title-a{
     margin-top: 0;
@@ -39,6 +96,7 @@ font-family: 'Lily Script One', cursive;
 }
 .guitarras{
     color: #1F313C;
+    margin-bottom: 60px;
 }
 .guitarras h3{
     font-family: 'Lily Script One', cursive;
@@ -47,9 +105,9 @@ font-family: 'Lily Script One', cursive;
 }
 /*#colorHexagecimal, rgb, imagen, rgba, rgb(12,12,12,.5)*/
 .portada{
-    background-image: url("../images/background.png");
-        color: white;
+    color: white;
     padding: 20px;
+    height: 500px;
     /*En css todo se hereda*/
 }
 .portada button{
@@ -67,29 +125,32 @@ font-family: 'Lily Script One', cursive;
     line-height: 20px;
     color: #fd324e;
 }
+.menu a{
+    color: white;
+    text-decoration: none;
+}
 .menu li{
     display: inline-block;
         margin-left: 30px;
 }
 .logotipo{
     display: inline-block;
+    margin-left: 0;
 }
-.menu, .logotipo, .menu li {font-size: 24px; display: inline-block; }
-header{
-        width: 800px;
-    margin: auto;
-    position: relative;
-}
-.contenedor{
-     width: 800px;
-    margin: auto;
-}
+.menu, .logotipo, .menu li 
+{
+    font-size: 24px; display: inline-block; }
+
+
 .guitarra{
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 10px 40px 10px;
+    padding: 25px;
 /*    overflow: hidden;*/
     border: 1px solid #1F313C;
     border-radius: 8px;
+}
+.guitarra.b{
+    height: 160px;
 }
 .guitarra ol{
     padding: 0;
@@ -97,27 +158,32 @@ header{
 .derecha{
     float: right;
     position: relative;
-    top: -127px;
+    top: -141px;
 }
 .izquierda{
     float: left;
     position: relative;
-    top: 80px;
+    bottom: 15px;
 }
 .contenedor-guitarra-a{
     padding-left: 20px;
+    margin-top: -14px;
 }
 .contenedor-guitarra-b{
     margin-left: 370px;
+    position: relative;
+    bottom: 90px;
 }
 .footer{
     background: #273b47;
+    padding: 50px 10px;
 }
 .contacto{
     display: flex;
     width: 300px;
     flex-wrap: wrap;
     align-items: center;
+    height: 200px;
 }
 .contacto img{
     display: block;
@@ -138,7 +204,7 @@ header{
     display: flex;
     width: 400px;
     color: white;
-    padding: 50px 10px;
+    
 }
 .col1, col2{
     display: flex;
@@ -150,6 +216,9 @@ header{
 .col2{
     align-content: flex-start;
 }
+.col2 .button{
+    margin-top: 15px;
+}
 .intereses label{
     font-size: 12px;
 }
@@ -159,22 +228,6 @@ header{
 .sexo{
     margin-top: 10px;
 }
-.contac{
-    display: flex;
-}
-table{
-    width: 100%;
-}
-th{
-    background: #273b47;
-    color: white;
-    padding: 10px 20px;
-    text-align: left;
-}
-td{
-    padding: 20px;
-}
-table, td, th{
-    border: 1px solid #273b47;
-    border-collapse: collapse;
+.tabla{
+    margin: 50px 0;
 }
