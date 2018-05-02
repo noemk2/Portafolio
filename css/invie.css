@@ -61,6 +61,12 @@ font-family: 'Lily Script One', cursive;
     position: absolute;
     right: 0;
 }
+.menu li:before{
+    content: "♦";
+    font-size: 25px;
+    line-height: 20px;
+    color: #fd324e;
+}
 .menu li{
     display: inline-block;
         margin-left: 30px;
@@ -155,4 +161,20 @@ header{
 }
 .contac{
     display: flex;
+}
+table{
+    width: 100%;
+}
+th{
+    background: #273b47;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+}
+td{
+    padding: 20px;
+}
+table, td, th{
+    border: 1px solid #273b47;
+    border-collapse: collapse;
 }
